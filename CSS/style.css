@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono&display=swap');
+
+@keyframes bounce{
+    0%, 20%, 60%, 100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+            -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+        }
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+        }
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 56%, rgba(43,14,14,1) 76%, rgba(0,0,0,1) 95%);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+.cabecalho-imagem {
+    display: flex;
+    height: 200px;
+    margin-left: 150px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 80px;
+    margin-left: 800px;
+}
+
+.cabecalho-menu-item {
+    font-family: 'Bebas Neue', cursive;
+    color:#FFFFFF;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.cabecalho-menu-item:hover{
+transition: all 1s ease;
+font-family: 'Bebas Neue', cursive;
+color:#b9b9b9;
+font-weight: 400;
+font-size: 28px;
+animation: bounce 1s;
+}
+
+.conteudo {
+    border-top: 0.4px solid #FFFFFF;
+    margin-bottom: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    font-family: 'Roboto Mono', monospace;
+    color:#FFFFFF;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.conteudo-principal-titulo {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    color:#FFFFFF;
+    font-weight: 400;
+    font-size: 28px;
+}
+.conteudo-principal-subtitulo {
+    font-family: 'Roboto Mono', monospace;
+    color:#FFFFFF;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.conteudo-principal-botao {
+    background-color: #FFFFFF;
+    width: 180px;
+    height: 34px;
+    box-shadow: 2px 3px 2px rgb(149, 143, 143);
+    border-radius: 10px;
+    font-family: 'Bebas Neue', cursive;
+    color:#000000;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+.conteudo-principal-botao:hover {
+
+background: #4c4c4c;
+font-family: 'Bebas Neue', cursive;
+color:#FFFFFF;
+transition: all 2s ease;
+animation: bounce 1s;
+}
+
+.conteudo-principal-imagem{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+    margin-top: 120px;
+    margin-right: 80px;
+}
+
+
+.separa-conteudo {
+    border-top: 0.4px solid #FFFFFF;
+    padding-top: 48px;
+    margin-left: 850px;
+    margin-right: 850px;
+    margin-top: 70px;
+}
+
+.conteudo-secundario {
+    gap: 24px;
+    margin-top: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.conteudo-secundario-escrito {
+    display: flex;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+}
+
+.conteudo-secundario-titulo {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 40px;
+    color:#FFFFFF;
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 30px;
+    color:#FFFFFF;
+    margin-top: 20px;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 0.4px solid #FFFFFF;
+    padding-top: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 200px;
+    margin-block-end: 50px;
+    gap: 260px;
+}
+
+.rodape-imagem {
+    display: flex;
+    justify-content: flex-start;
+    height: 80px;
+    margin-left: 350px;
+}
+
+.rodape-imagem-sociais {
+    display: flex;
+    gap: 30px;
+}
+
+.animacao-sociais {
+display: flex;
+gap: 30px;
+}
+
+.animacao-sociais:hover {
+    animation: bounce 1s;
+}
